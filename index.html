@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">    
+    <title>Pokedex</title>
+</head>
+<body>
+    <img src="./img/pokedex.png" id="imagenPokedex">
+    <div id="pokedex">
+        <div id="infoPokemon">
+            <div id="entradaDatos">
+                <h3>Hola </h3>
+                <input type="text" id="pokeName" name="pokeName" placeholder="Ingresa pokemon" value="Pikachu">
+            </div>
+
+            <img src="" alt="" id="pokeImg" width="150px">
+        </div>
+
+        <div id="detallesPokemon">
+            <table>
+                <tr>
+                    <td>TIPO</td>
+                    <td id="type"></td>
+                </tr>
+                <tr style="height: 10px;"></tr>
+                <tr>
+                    <td>HP</td>
+                    <td id="hp" class="stats"></td>
+                </tr>
+                <tr>
+                    <td>ATTACK</td>
+                    <td id="attack" class="stats"></td>
+                </tr>
+                <tr>
+                    <td>DEFENSE</td>
+                    <td id="defense" class="stats"></td>
+                </tr>
+                <tr>
+                    <td>SPECIAL-ATTACK</td>
+                    <td id="special-atack" class="stats"></td>
+                </tr>
+                <tr>
+                    <td>SPECIAL-DEFENSE</td>
+                    <td id="special-defense" class="stats"></td>
+                </tr>
+                <tr>
+                    <td>SPEED</td>
+                    <td id="speed" class="stats"></td>
+                </tr>
+                <tr style="height: 10px;"></tr>
+                <tr>
+                    <td>MOVES</td>
+                    <td id="moves" align="right"></td>
+                </tr>
+            </table>
+            <div id="otrosDatos">
+                <p>HEIGHT <span id="height">3</span>m</p>
+                <p style="margin-left: 36px;">WEIGHT:<span id="weight">40</span></p>
+            </div>
+            
+        </div>
+    </div>
+    <button onclick="fetchPokemon();" id="btnBuscar">Buscar</button>
+    
+    <p id="aviso">Ingresa el nombre del pokemón en el cuadro de busqueda. Al finalizar presiona el botón de buscar</p>
+
+    
+    <script src="./js/pokedex.js"></script>
+</body>
+</html>

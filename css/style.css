@@ -1,0 +1,88 @@
+*{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+}
+
+body{
+    background-image: url('../img/background.jpg');
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:0% 0%;
+}
+
+
+#pokedex{
+    display: flex;
+    justify-content: center;
+    margin-top: -325px;
+    margin-bottom: -38px;
+}
+
+#infoPokemon{
+    margin-right:60px;
+    margin-left:30px;
+}
+
+#detallesPokemon{
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.stats{
+    text-align: right;
+}
+
+
+#imagenPokedex{
+    display: block;
+    margin: auto;
+}
+
+
+#entradaDatos{    
+    display: flex;
+    margin-bottom: -20px;
+    margin-top: 10px;
+    z-index: 5;
+}
+
+#entradaDatos input{
+    width: 125px;
+    height: 25px;
+    margin-left: 8px;
+    margin-top: -3px;
+    font-size: 8px;
+    border: 0px;
+    border-bottom: 1px solid grey;
+    background-color: none;
+    z-index: 15;
+}
+
+#entradaDatos input:focus{
+    outline: none;
+}
+
+#otrosDatos{
+    margin-top: 113px;
+    margin-left: 6px;
+    display: flex;
+}
+
+#btnBuscar{
+    border: 0px;
+    background-color: inherit;
+    margin-top: 0px;
+    margin-left: 444px;
+    width: 99px;
+    height: 46px;
+    z-index: 10;
+}
+
+#aviso{
+    margin: auto;
+    margin-bottom: -10px;
+    margin-top: 100px;
+    font-size: 14px;
+    width: 55%;
+}
